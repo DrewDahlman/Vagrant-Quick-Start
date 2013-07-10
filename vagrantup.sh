@@ -31,14 +31,28 @@ touch puppet/templates/database_tmp.yml.erb || exit
 cat puppet/manifests/vagrant_temp.pp > puppet/manifests/vagrant_temp.pp
 cat puppet/templates/database_tmp.yml.erb > puppet/templates/database_tmp.yml.erb
 
-echo "##------------------ CONFIG -----------------##"
+echo "
+Starting Vagrantup.sh.... 
+
+#----------------------------------------------------------------------------
+#
+# Inital Application Config
+#
+#----------------------------------------------------------------------------
+"
 read -p "What is your application name? " response
 sed -e '4 c\
 	$app_name = "'$response'"
 	' puppet/manifests/vagrant.pp >> puppet/manifests/vagrant_temp.pp
 mv puppet/manifests/vagrant_temp.pp puppet/manifests/vagrant.pp
 
-echo "##------------------ DEVELOPMENT CONFIG -----------------##"
+echo "
+#----------------------------------------------------------------------------
+#
+# Development Config
+#
+#----------------------------------------------------------------------------
+"
 
 # DB NAME
 read -p "What is your Database name? " response
@@ -69,7 +83,13 @@ sed -e '7 c\
 mv puppet/manifests/vagrant_temp.pp puppet/manifests/vagrant.pp
 mv puppet/templates/database_tmp.yml.erb puppet/templates/database.yml.erb
 
-echo "##------------------ PRODUCTION CONFIG -----------------##"
+echo "
+#----------------------------------------------------------------------------
+#
+# Production Config
+#
+#----------------------------------------------------------------------------
+"
 read -p "What is your Database name? " response
 sed -e '15 c\
 	\  database: '$response'
@@ -104,4 +124,4 @@ mv puppet/templates/database_tmp.yml.erb puppet/templates/database.yml.erb
 
 cd ..
 
-echo "done"
+echo "BOOM! You're ready to rock and roll!"
