@@ -18,7 +18,9 @@ A quick setup for rails apps using Vagrant & Puppet for rails projects.
 3. In terminal enter <code>chmod a+x vagrantup.sh</code>
 
 4. <code>./vagrantup.sh</code>
-This will grab a Vagrantfile & Puppet from s3.
+This will grab a Vagrantfile & Puppet from s3 and get you rolling.
+
+Vagrantup.sh will ask you about your Application and Database and will dynamically create your puppet file, databases, users and get everything ready for Development and Production Environments.
 
 ##Running Vagrant
 After you have run vagrantup.sh you're free to:
