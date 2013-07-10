@@ -27,9 +27,9 @@ After you have run vagrantup.sh you're free to:
 
 <code>vagrant ssh</code>
 
-<code>rbenv rehash</code>
-
 <code>bundle install</code>
+
+<code>rbenv rehash</code>
 
 <code>rails s</code>
 
