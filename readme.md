@@ -4,11 +4,9 @@ A quick setup for rails apps using Vagrant & Puppet for rails projects.
 ##Required
 1. Get and install VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
-2. Install Vagrant:  
-	<tt>gem install vagrant</tt>
+2. Install Vagrant: <code>gem install vagrant</code>
 
-3. Install vagrant-vbguest to stop Vagrant complaining about guest addition version:  
-	<tt>gem install vagrant-vbguest</tt>
+3. Install vagrant-vbguest to stop Vagrant complaining about guest addition version: <code>gem install vagrant-vbguest</code>
 
 ##To Use
 1. cd to rails app directory
