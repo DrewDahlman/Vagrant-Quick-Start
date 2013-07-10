@@ -1,5 +1,5 @@
 ##Vagrant Quick Start
-A quick setup for rails apps using Vagrant & Puppet for rails projects.
+A quick setup for rails apps using Vagrant & Puppet for rails projects. Vagrantup.sh will download a base Vagrantfile as well as a puppet directory. It will also setup your development and production database.yml file as well as other tedious setup steps.
 
 ##Required
 1. Get and install VirtualBox: https://www.virtualbox.org/wiki/Downloads
