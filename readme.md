@@ -1,5 +1,5 @@
 ##Vagrant Quick Start
-A quick setup for rails apps using Vagrant for local dev.
+A quick setup for rails apps using Vagrant & Puppet for rails projects.
 
 ##To Use
 cd to rails app directory<br>
