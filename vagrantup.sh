@@ -111,7 +111,7 @@ sed -e '8 c\
 	$DB_PASS_PROD = "'$response'"
 	' puppet/manifests/vagrant.pp >> puppet/manifests/vagrant_temp.pp
 sed -e '17 c\
-	\  username: '$response'
+	\  password: '$response'
 	' puppet/templates/database.yml.erb >> puppet/templates/database_tmp.yml.erb
 mv puppet/manifests/vagrant_temp.pp puppet/manifests/vagrant.pp
 mv puppet/templates/database_tmp.yml.erb puppet/templates/database.yml.erb
